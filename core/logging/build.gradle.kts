@@ -32,7 +32,6 @@ kotlin {
       dependsOn(mobileMain)
 
       dependencies {
-        implementation(libs.google.firebase.crashlytics)
       }
     }
 

@@ -124,7 +124,6 @@ dependencies {
 
   implementation(libs.kotlin.coroutines.android)
 
-  implementation(libs.google.firebase.crashlytics)
 
   "baselineProfile"(projects.androidApp.benchmark)
 

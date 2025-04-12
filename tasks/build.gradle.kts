@@ -28,10 +28,7 @@ kotlin {
 
 android {
   namespace = "app.tivi.tasks"
-
-  defaultConfig {
-    manifestPlaceholders += mapOf(
-      "appAuthRedirectScheme" to "empty",
-    )
-  }
+    defaultConfig {
+        manifestPlaceholders += mapOf("appAuthRedirectScheme" to "empty")
+    }
 }
