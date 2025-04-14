@@ -144,6 +144,8 @@ internal fun EpisodeDetails(
       onAddWatch = {
         scope.launchOrThrow {
           overlayHost.showInBottomSheet(EpisodeTrackScreen(viewState.episode!!.id))
+          overlayHost.showInBottomSheet(EpisodeDetailsScreen(viewState.episode!!.id + 1))
+
         }
       },
       onMessageShown = { id -> viewState.eventSink(EpisodeDetailsUiEvent.ClearMessage(id)) },
